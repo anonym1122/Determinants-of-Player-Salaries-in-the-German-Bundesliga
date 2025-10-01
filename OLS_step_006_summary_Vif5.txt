@@ -1,0 +1,187 @@
+===== OLS Step 5 (VIF threshold: ≤ 5) =====
+N (obs): 2160
+Adj. R^2: 0.6741   Max VIF: 135.174
+Predictors (118): Def(GCA)/90, S04_Dummy, Wolfsburg_Dummy, Munich_Dummy, weak_Dummy, paderborn_Dummy, Gladbach_Dummy, Freiburg_Dummy, PKcon/90, CK_st/90, TO(GCA)/90, Arminia_Dummy, Stuttgart_Dummy, BEL-Lux_Dummy, Bayer04_Dummy, xG+xAG/90, TSG_Dummy, TB/90, South/latinamerica_Dummy, Greuther_Dummy, Frankfurt_Dummy, British_Dummy, Düsseldorf_Dummy, PassLive(GCA)/90, SUI_Dummy, GCA-90_D, Heidenheim_Dummy, G-xG/90, Balkan_Dummy, Hertha_Dummy, NED_Dummy, Union_Dummy, Skandinavia_Dummy, Err/90, Def(GCA), Mainz_Dummy, Age, remaining contract term, Iberia_Dummy, Afrika_Dummy, Bremen_Dummy, FRA_Dummy, TO/90, Num_Pos, BVB_Dummy, Asia_Dummy, geTKLW%, Subs/90, GCA-90_M, On-Off(Teamsuc), Gls/90_M, Dis/90, CK_st, CPA/90, A-xAG/90, PPA/90, Fld(GCA), unSub, Tkld take ons/90, Def/90, USA_Dummy, PassDead(GCA)/90, Sw/90, Mis/90, Offside/90, xAG/90, Fld, TO(GCA), carries 1/3/90, contract lenght, Mit, 1/3/90, Err, Sh(SCA), Crs/90, Def, 1/3/90, aerials lost/90, PrgP/90, On-Off(Teamsuc xG), Sh (Blocks)_D, Succ_Take-ons, Cmpl%, Cmp_short%, Sw, Mn/Start, CrdY, Dist (Sh), Mn/Sub, np:G-xG, Cmp_long%, FK, Att Pen(Tou), Att 3rd (Tou)/90, PK, Tkl (Ch), xG+/-, aerials%, Crs (Perf)/90, Def, 1/3, Pass (Blocks), 2CrdY, Tkl+Int_M, +/-, Pass (Blocks)/90, Sh(Blocks), Blocks_pass, TotDist(Car)/90, aerials won...338, TI, Cmp%_M, Tkld%, Mid 3rd (Tou), SoT%, aerials lost, aerials won...337, Cmp_medium%, Insta Seasonstart, Insta after Season, Agex2
+
+
+Call:
+lm(formula = fm, data = dat)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.87049 -0.35577  0.02952  0.40569  2.75377 
+
+Coefficients:
+                             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                 3.544e+00  6.146e-01   5.767 9.29e-09 ***
+`Def(GCA)/90`              -4.958e+00  1.494e+00  -3.319 0.000921 ***
+S04_Dummy                   8.381e-01  1.020e-01   8.216 3.68e-16 ***
+Wolfsburg_Dummy             4.790e-01  7.152e-02   6.698 2.73e-11 ***
+Munich_Dummy                1.018e+00  9.267e-02  10.988  < 2e-16 ***
+weak_Dummy                 -6.916e-01  7.946e-02  -8.704  < 2e-16 ***
+paderborn_Dummy            -6.621e-01  1.503e-01  -4.405 1.11e-05 ***
+Gladbach_Dummy              2.623e-01  7.510e-02   3.492 0.000489 ***
+Freiburg_Dummy             -7.979e-01  7.546e-02 -10.573  < 2e-16 ***
+`PKcon/90`                 -3.664e-01  3.092e-01  -1.185 0.236071    
+`CK_st/90`                  3.999e-01  9.581e-01   0.417 0.676449    
+`TO(GCA)/90`                1.134e+00  5.239e-01   2.165 0.030514 *  
+Arminia_Dummy              -4.494e-01  1.184e-01  -3.795 0.000152 ***
+Stuttgart_Dummy            -7.006e-01  7.828e-02  -8.950  < 2e-16 ***
+`BEL-Lux_Dummy`             3.776e-01  9.832e-02   3.840 0.000127 ***
+Bayer04_Dummy               2.027e-01  7.691e-02   2.636 0.008461 ** 
+`xG+xAG/90`                 6.681e-01  1.682e-01   3.972 7.39e-05 ***
+TSG_Dummy                   2.545e-02  7.078e-02   0.359 0.719259    
+`TB/90`                     2.996e-01  1.054e-01   2.842 0.004526 ** 
+`South/latinamerica_Dummy`  2.871e-01  9.510e-02   3.019 0.002564 ** 
+Greuther_Dummy             -2.842e-01  1.519e-01  -1.871 0.061446 .  
+Frankfurt_Dummy            -8.736e-02  7.034e-02  -1.242 0.214414    
+British_Dummy               3.076e-01  1.327e-01   2.319 0.020491 *  
+Düsseldorf_Dummy            1.860e-01  1.494e-01   1.245 0.213309    
+`PassLive(GCA)/90`         -3.105e-01  1.233e-01  -2.518 0.011870 *  
+SUI_Dummy                   1.215e-01  8.337e-02   1.458 0.145102    
+`GCA-90_D`                  8.891e-02  1.607e-01   0.553 0.580234    
+Heidenheim_Dummy           -1.979e-01  1.710e-01  -1.157 0.247286    
+`G-xG/90`                  -1.535e-01  1.513e-01  -1.014 0.310590    
+Balkan_Dummy                1.857e-01  7.070e-02   2.627 0.008676 ** 
+Hertha_Dummy               -1.917e-02  7.374e-02  -0.260 0.794917    
+NED_Dummy                   1.507e-01  7.826e-02   1.926 0.054256 .  
+Union_Dummy                -4.059e-01  7.001e-02  -5.797 7.78e-09 ***
+Skandinavia_Dummy           1.642e-01  6.523e-02   2.517 0.011912 *  
+`Err/90`                    3.731e-01  3.057e-01   1.220 0.222467    
+`Def(GCA)`                  2.195e-01  1.088e-01   2.018 0.043739 *  
+Mainz_Dummy                -1.277e-01  6.987e-02  -1.828 0.067753 .  
+Age                         6.046e-01  3.952e-02  15.299  < 2e-16 ***
+`remaining contract term`   1.515e-01  3.648e-02   4.152 3.43e-05 ***
+Iberia_Dummy                2.104e-01  8.879e-02   2.369 0.017915 *  
+Afrika_Dummy                9.119e-02  6.028e-02   1.513 0.130478    
+Bremen_Dummy               -8.088e-02  7.987e-02  -1.013 0.311356    
+FRA_Dummy                   2.441e-01  6.403e-02   3.812 0.000142 ***
+`TO/90`                    -1.909e-03  1.080e-01  -0.018 0.985898    
+Num_Pos                    -4.167e-02  3.672e-02  -1.135 0.256591    
+BVB_Dummy                   6.628e-01  7.777e-02   8.523  < 2e-16 ***
+Asia_Dummy                  8.170e-02  7.830e-02   1.043 0.296851    
+`geTKLW%`                   1.028e-01  9.464e-02   1.087 0.277299    
+`Subs/90`                  -3.852e-02  1.756e-02  -2.194 0.028350 *  
+`GCA-90_M`                  8.716e-02  1.511e-01   0.577 0.563992    
+`On-Off(Teamsuc)`          -5.464e-02  1.980e-02  -2.759 0.005846 ** 
+`Gls/90_M`                 -9.318e-02  2.272e-01  -0.410 0.681835    
+`Dis/90`                    7.027e-02  2.834e-02   2.480 0.013233 *  
+CK_st                       6.699e-02  7.189e-02   0.932 0.351510    
+`CPA/90`                   -7.875e-02  4.610e-02  -1.708 0.087739 .  
+`A-xAG/90`                  1.214e-01  1.690e-01   0.719 0.472515    
+`PPA/90`                    7.822e-03  4.264e-02   0.183 0.854448    
+`Fld(GCA)`                  5.501e-02  3.182e-02   1.729 0.083995 .  
+unSub                      -2.814e-02  3.065e-03  -9.180  < 2e-16 ***
+`Tkld take ons/90`         -4.000e-02  3.504e-02  -1.142 0.253786    
+`Def/90`                   -2.072e-01  2.016e-01  -1.028 0.303999    
+USA_Dummy                   3.132e-01  1.082e-01   2.895 0.003831 ** 
+`PassDead(GCA)/90`          2.067e-01  3.128e-01   0.661 0.508774    
+`Sw/90`                    -2.692e-02  5.533e-02  -0.486 0.626674    
+`Mis/90`                   -4.235e-02  2.062e-02  -2.054 0.040108 *  
+`Offside/90`                8.252e-02  6.148e-02   1.342 0.179678    
+`xAG/90`                   -2.826e-01  3.137e-01  -0.901 0.367807    
+Fld                        -2.262e-02  9.874e-03  -2.291 0.022045 *  
+`TO(GCA)`                  -1.208e-02  4.062e-02  -0.297 0.766214    
+`carries 1/3/90`            4.615e-02  2.778e-02   1.661 0.096839 .  
+`contract lenght`          -8.710e-02  3.422e-02  -2.545 0.010997 *  
+`Mit, 1/3/90`               5.546e-02  4.002e-02   1.386 0.165909    
+Err                        -2.040e-02  3.317e-02  -0.615 0.538619    
+`Sh(SCA)`                   8.846e-03  9.799e-03   0.903 0.366735    
+`Crs/90`                   -7.106e-02  6.245e-02  -1.138 0.255330    
+`Def, 1/3/90`              -5.183e-03  3.148e-02  -0.165 0.869260    
+`aerials lost/90`          -5.821e-03  3.508e-03  -1.660 0.097162 .  
+`PrgP/90`                   2.087e-03  1.251e-02   0.167 0.867513    
+`On-Off(Teamsuc xG)`       -3.214e-02  3.106e-02  -1.035 0.300837    
+`Sh (Blocks)_D`             6.293e-03  9.789e-03   0.643 0.520348    
+`Succ_Take-ons`             7.091e-03  2.116e-03   3.351 0.000820 ***
+`Cmpl%`                     1.204e-02  4.572e-03   2.634 0.008493 ** 
+`Cmp_short%`                8.965e-03  3.582e-03   2.503 0.012385 *  
+Sw                          3.088e-03  4.175e-03   0.740 0.459589    
+`Mn/Start`                 -6.118e-03  2.244e-03  -2.726 0.006463 ** 
+CrdY                       -9.794e-03  7.934e-03  -1.234 0.217185    
+`Dist (Sh)`                 4.163e-03  4.175e-03   0.997 0.318812    
+`Mn/Sub`                   -4.910e-03  1.808e-03  -2.716 0.006673 ** 
+`np:G-xG`                   1.129e-02  1.634e-02   0.691 0.489876    
+`Cmp_long%`                 1.755e-03  1.318e-03   1.332 0.183154    
+FK                         -7.711e-04  1.063e-02  -0.073 0.942159    
+`Att Pen(Tou)`              9.439e-04  1.260e-03   0.749 0.453901    
+`Att 3rd (Tou)/90`          6.599e-03  4.619e-03   1.429 0.153246    
+PK                         -3.116e-02  2.539e-02  -1.227 0.220002    
+`Tkl (Ch)`                 -5.297e-03  4.471e-03  -1.185 0.236220    
+`xG+/-`                     4.648e-03  3.061e-03   1.519 0.128989    
+`aerials%`                  2.968e-03  1.005e-03   2.953 0.003185 ** 
+`Crs (Perf)/90`             7.207e-02  6.224e-02   1.158 0.247046    
+`Def, 1/3`                 -1.658e-03  4.451e-03  -0.373 0.709538    
+`Pass (Blocks)`             3.533e-03  3.982e-03   0.887 0.375032    
+`2CrdY`                    -3.779e-05  2.023e-03  -0.019 0.985099    
+`Tkl+Int_M`                 1.608e-03  1.388e-03   1.159 0.246770    
+`+/-`                       6.480e-03  2.339e-03   2.770 0.005651 ** 
+`Pass (Blocks)/90`         -5.806e-02  4.483e-02  -1.295 0.195433    
+`Sh(Blocks)`                2.801e-03  9.492e-03   0.295 0.767969    
+Blocks_pass                -1.649e-03  2.878e-03  -0.573 0.566720    
+`TotDist(Car)/90`          -1.524e-04  1.533e-04  -0.994 0.320380    
+`aerials won...338`        -4.472e-03  1.450e-02  -0.308 0.757847    
+TI                         -5.286e-04  4.450e-04  -1.188 0.235008    
+`Cmp%_M`                   -1.076e-03  9.952e-04  -1.081 0.279740    
+`Tkld%`                     1.227e-03  8.935e-04   1.373 0.169802    
+`Mid 3rd (Tou)`             1.749e-04  1.297e-04   1.349 0.177616    
+`SoT%`                     -2.714e-04  9.529e-04  -0.285 0.775825    
+`aerials lost`             -5.721e-04  1.003e-03  -0.571 0.568303    
+`aerials won...337`         1.089e-03  1.286e-03   0.847 0.396991    
+`Cmp_medium%`              -3.483e-03  2.699e-03  -1.290 0.197023    
+`Insta Seasonstart`         3.713e-08  1.983e-08   1.872 0.061292 .  
+`Insta after Season`        8.564e-09  1.803e-08   0.475 0.634844    
+Agex2                      -9.739e-03  7.478e-04 -13.024  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.6477 on 2041 degrees of freedom
+Multiple R-squared:  0.6919,	Adjusted R-squared:  0.6741 
+F-statistic: 38.84 on 118 and 2041 DF,  p-value: < 2.2e-16
+
+
+--- VIF-Tabelle (alle aktuellen Prädiktoren, absteigend) ---
+                term        VIF
+1                Age 135.174244
+2              Agex2 133.257806
+3        Blocks_pass   5.379974
+4         weak_Dummy   4.166832
+5                 TI   3.602494
+6                 Sw   3.388458
+7                Fld   2.707941
+8                Err   2.320874
+9              CK_st   2.267957
+10      Munich_Dummy   2.210766
+11         S04_Dummy   1.910745
+12              CrdY   1.901987
+13                FK   1.830523
+14                PK   1.709421
+15             unSub   1.700239
+16         BVB_Dummy   1.646713
+17           Num_Pos   1.586827
+18     Bayer04_Dummy   1.547788
+19     Arminia_Dummy   1.536877
+20    Greuther_Dummy   1.466269
+21    Freiburg_Dummy   1.405162
+22    Gladbach_Dummy   1.403647
+23         TSG_Dummy   1.385389
+24  Heidenheim_Dummy   1.381479
+25   Frankfurt_Dummy   1.368205
+26       Union_Dummy   1.365829
+27       Mainz_Dummy   1.350108
+28      Hertha_Dummy   1.341489
+29   Stuttgart_Dummy   1.339995
+30   Wolfsburg_Dummy   1.338493
+31   paderborn_Dummy   1.331192
+32  Düsseldorf_Dummy   1.315182
+33      Bremen_Dummy   1.311626
+34         FRA_Dummy   1.219744
+35      Afrika_Dummy   1.179291
+36         SUI_Dummy   1.153330
+37      Iberia_Dummy   1.131907
+38 Skandinavia_Dummy   1.131548
+39        Asia_Dummy   1.125966
+40      Balkan_Dummy   1.125709
+41         NED_Dummy   1.124787
+42         USA_Dummy   1.122075
+43     British_Dummy   1.118478

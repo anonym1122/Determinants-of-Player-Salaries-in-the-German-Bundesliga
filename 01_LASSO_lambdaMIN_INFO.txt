@@ -1,0 +1,128 @@
+===== LASSO (lambda.min) =====
+lambda.min: 0.00656687
+y: log GROSS P/Y
+X (candidates): 332
+Selected: 122
+Selected terms:
+  - Def(GCA)/90
+  - strong_Dummy
+  - S04_Dummy
+  - Wolfsburg_Dummy
+  - Munich_Dummy
+  - weak_Dummy
+  - paderborn_Dummy
+  - Gladbach_Dummy
+  - Freiburg_Dummy
+  - PKcon/90
+  - CK_st/90
+  - TO(GCA)/90
+  - Arminia_Dummy
+  - Stuttgart_Dummy
+  - BEL-Lux_Dummy
+  - Bayer04_Dummy
+  - xG+xAG/90
+  - TSG_Dummy
+  - TB/90
+  - South/latinamerica_Dummy
+  - Greuther_Dummy
+  - Frankfurt_Dummy
+  - British_Dummy
+  - Düsseldorf_Dummy
+  - PassLive(GCA)/90
+  - SUI_Dummy
+  - GCA-90_D
+  - Heidenheim_Dummy
+  - FW_Dummy
+  - G-xG/90
+  - Balkan_Dummy
+  - Hertha_Dummy
+  - NED_Dummy
+  - Union_Dummy
+  - Skandinavia_Dummy
+  - Err/90
+  - Def(GCA)
+  - Mainz_Dummy
+  - Age
+  - remaining contract term
+  - Iberia_Dummy
+  - Afrika_Dummy
+  - Bremen_Dummy
+  - FRA_Dummy
+  - TO/90
+  - Num_Pos
+  - BVB_Dummy
+  - Asia_Dummy
+  - geTKLW%
+  - Subs/90
+  - GCA-90_M
+  - On-Off(Teamsuc)
+  - Gls/90_M
+  - Dis/90
+  - CK_st
+  - CPA/90
+  - A-xAG/90
+  - PPA/90
+  - Fld(GCA)
+  - unSub
+  - Tkld take ons/90
+  - Def/90
+  - USA_Dummy
+  - PassDead(GCA)/90
+  - Sw/90
+  - Mis/90
+  - Offside/90
+  - xAG/90
+  - Fld
+  - TO(GCA)
+  - carries 1/3/90
+  - contract lenght
+  - Mit, 1/3/90
+  - Err
+  - Sh(SCA)
+  - Crs/90
+  - Def, 1/3/90
+  - aerials lost/90
+  - PrgP/90
+  - On-Off(Teamsuc xG)
+  - Sh (Blocks)_D
+  - Succ_Take-ons
+  - Cmpl%
+  - Cmp_short%
+  - Sw
+  - Mn/Start
+  - CrdY
+  - onG
+  - Dist (Sh)
+  - Mn/Sub
+  - np:G-xG
+  - Cmp_long%
+  - FK
+  - PassLive
+  - Att Pen(Tou)
+  - Att 3rd (Tou)/90
+  - PK
+  - Tkl (Ch)
+  - xG+/-
+  - aerials%
+  - Crs (Perf)/90
+  - Def, 1/3
+  - Pass (Blocks)
+  - 2CrdY
+  - Tkl+Int_M
+  - +/-
+  - Pass (Blocks)/90
+  - Sh(Blocks)
+  - Blocks_pass
+  - Mis
+  - TotDist(Car)/90
+  - aerials won...338
+  - TI
+  - Cmp%_M
+  - Tkld%
+  - Mid 3rd (Tou)
+  - SoT%
+  - aerials lost
+  - aerials won...337
+  - Cmp_medium%
+  - Insta Seasonstart
+  - Insta after Season
