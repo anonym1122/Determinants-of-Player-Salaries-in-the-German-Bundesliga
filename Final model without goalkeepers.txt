@@ -1,0 +1,92 @@
+
+===== LINEARE REGRESSION =====
+
+Formel:
+`log GROSS P/Y` ~ Age + Agex2 + `Mis/90` + `Dis/90` + `Cmpl%` + 
+    `Def(GCA)` + `Cmp_short%` + `Def(GCA)/90` + `remaining contract term` + 
+    `Succ_Take-ons` + `+/-` + `contract lenght` + weak_Dummy + 
+    `xG+xAG/90` + `Subs/90` + Fld + `PassLive(GCA)/90` + Munich_Dummy + 
+    `Mn/Start` + `TB/90` + S04_Dummy + `aerials%` + unSub + `TO(GCA)/90` + 
+    BVB_Dummy + Bayer04_Dummy + Arminia_Dummy + `On-Off(Teamsuc)` + 
+    paderborn_Dummy + `Mn/Sub` + Gladbach_Dummy + Freiburg_Dummy + 
+    Wolfsburg_Dummy + FRA_Dummy + Union_Dummy + Stuttgart_Dummy + 
+    `South/latinamerica_Dummy` + USA_Dummy + British_Dummy + 
+    Skandinavia_Dummy + Iberia_Dummy + `BEL-Lux_Dummy` + Balkan_Dummy
+
+
+--- Modellzusammenfassung ---
+
+Call:
+lm(formula = `log GROSS P/Y` ~ Age + Agex2 + `Mis/90` + `Dis/90` + 
+    `Cmpl%` + `Def(GCA)` + `Cmp_short%` + `Def(GCA)/90` + `remaining contract term` + 
+    `Succ_Take-ons` + `+/-` + `contract lenght` + weak_Dummy + 
+    `xG+xAG/90` + `Subs/90` + Fld + `PassLive(GCA)/90` + Munich_Dummy + 
+    `Mn/Start` + `TB/90` + S04_Dummy + `aerials%` + unSub + `TO(GCA)/90` + 
+    BVB_Dummy + Bayer04_Dummy + Arminia_Dummy + `On-Off(Teamsuc)` + 
+    paderborn_Dummy + `Mn/Sub` + Gladbach_Dummy + Freiburg_Dummy + 
+    Wolfsburg_Dummy + FRA_Dummy + Union_Dummy + Stuttgart_Dummy + 
+    `South/latinamerica_Dummy` + USA_Dummy + British_Dummy + 
+    Skandinavia_Dummy + Iberia_Dummy + `BEL-Lux_Dummy` + Balkan_Dummy, 
+    data = dat_no_gk)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.90120 -0.35800  0.04168  0.40607  2.93177 
+
+Coefficients:
+                             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                 2.9452549  0.5872329   5.015 5.77e-07 ***
+Age                         0.6286679  0.0407604  15.423  < 2e-16 ***
+Agex2                      -0.0101465  0.0007797 -13.013  < 2e-16 ***
+`Mis/90`                   -0.0348961  0.0149521  -2.334 0.019705 *  
+`Dis/90`                    0.0806272  0.0262445   3.072 0.002155 ** 
+`Cmpl%`                     0.0127343  0.0033248   3.830 0.000132 ***
+`Def(GCA)`                  0.2752934  0.1057829   2.602 0.009327 ** 
+`Cmp_short%`                0.0075003  0.0036673   2.045 0.040972 *  
+`Def(GCA)/90`              -5.2964087  1.4465429  -3.661 0.000258 ***
+`remaining contract term`   0.1361732  0.0410763   3.315 0.000933 ***
+`Succ_Take-ons`             0.0061549  0.0014767   4.168 3.21e-05 ***
+`+/-`                       0.0120944  0.0014959   8.085 1.08e-15 ***
+`contract lenght`          -0.0824612  0.0380878  -2.165 0.030507 *  
+weak_Dummy                 -0.7373681  0.0589898 -12.500  < 2e-16 ***
+`xG+xAG/90`                 0.7679854  0.0957703   8.019 1.82e-15 ***
+`Subs/90`                  -0.0610483  0.0156765  -3.894 0.000102 ***
+Fld                        -0.0051885  0.0081428  -0.637 0.524074    
+`PassLive(GCA)/90`         -0.1772653  0.0727496  -2.437 0.014913 *  
+Munich_Dummy                1.1361937  0.0840752  13.514  < 2e-16 ***
+`Mn/Start`                 -0.0017368  0.0019984  -0.869 0.384896    
+`TB/90`                     0.3456095  0.0887881   3.893 0.000103 ***
+S04_Dummy                   0.9485835  0.0923698  10.269  < 2e-16 ***
+`aerials%`                  0.0029188  0.0010453   2.792 0.005282 ** 
+unSub                      -0.0283116  0.0038169  -7.417 1.77e-13 ***
+`TO(GCA)/90`                0.6346730  0.2869596   2.212 0.027102 *  
+BVB_Dummy                   0.7411659  0.0733755  10.101  < 2e-16 ***
+Bayer04_Dummy               0.2868905  0.0739190   3.881 0.000107 ***
+Arminia_Dummy              -0.3169052  0.1112736  -2.848 0.004446 ** 
+`On-Off(Teamsuc)`          -0.0864963  0.0170915  -5.061 4.57e-07 ***
+paderborn_Dummy            -0.6252868  0.1459204  -4.285 1.92e-05 ***
+`Mn/Sub`                   -0.0023393  0.0018814  -1.243 0.213881    
+Gladbach_Dummy              0.2955279  0.0712665   4.147 3.52e-05 ***
+Freiburg_Dummy             -0.7415376  0.0698473 -10.617  < 2e-16 ***
+Wolfsburg_Dummy             0.5097144  0.0676241   7.537 7.30e-14 ***
+FRA_Dummy                   0.1788279  0.0614107   2.912 0.003632 ** 
+Union_Dummy                -0.4035970  0.0657384  -6.139 1.00e-09 ***
+Stuttgart_Dummy            -0.6824831  0.0738268  -9.244  < 2e-16 ***
+`South/latinamerica_Dummy`  0.2265145  0.0919529   2.463 0.013850 *  
+USA_Dummy                   0.2097721  0.1069673   1.961 0.050011 .  
+British_Dummy               0.3279867  0.1294069   2.535 0.011337 *  
+Skandinavia_Dummy           0.1130460  0.0674681   1.676 0.093988 .  
+Iberia_Dummy                0.1736048  0.0873107   1.988 0.046912 *  
+`BEL-Lux_Dummy`             0.3155237  0.1009605   3.125 0.001803 ** 
+Balkan_Dummy                0.1433570  0.0689732   2.078 0.037799 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.6485 on 1946 degrees of freedom
+Multiple R-squared:  0.6757,	Adjusted R-squared:  0.6685 
+F-statistic: 94.28 on 43 and 1946 DF,  p-value: < 2.2e-16
+
+
+
+--- Residualstandardfehler ---
+0.648456 
